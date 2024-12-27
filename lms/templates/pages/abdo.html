@@ -1,0 +1,365 @@
+{% load static %}
+<!-- <!DOCTYPE html>
+<html lang="ar">
+   
+<head>
+    <meta charset="UTF-8">
+    <title>صفحة تعريف عني</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        text-align: center;
+    }
+
+    .container {
+        width: 60%;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .profile {
+        margin-top: 20px;
+    }
+
+    h1 {
+        color: #007BFF;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        background-color: #007BFF;
+        color: #fff;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 4px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my personal page!</h1>
+        <div class="profile">
+            <h2>Name: Abdel Hamid Ahmed</h2>
+            <p>Age: 21 years old</p>
+            <h3>Features</h3>
+            <ul>
+                <li>Professional web developer</li>
+                <li>HTML</li>
+                <li>Css </li>
+                <li>js </li>
+                <li>Reactjs</li>
+                <li>Overview of a Library Management System using Django
+                    <button type="button">Django</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+     <script src="script.js"></script> 
+</body>
+
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Button Click Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        text-align: center;
+    }
+
+    .container {
+        width: 60%;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .profile {
+        margin-top: 20px;
+    }
+
+    h1 {
+        color: #007BFF;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        background-color: #007BFF;
+        color: #fff;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    #lmsDescription {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #007BFF;
+        background-color: #e0e0e0;
+        display: none;
+    }
+</style>
+
+<body>
+    <h1>Welcome to my personal page!</h1>
+    <p>Age: 21 years old</p>
+    <h3>Features</h3>
+    <ul>
+        <li>Professional web developer</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>ReactJS</li>
+        <li>
+            Overview of a Library Management System using
+            <button type="button" id="showLMSBtn">Django</button>
+            <a href="{% url 'index' %}"><button type="button" id="showLMSBtn">Home </button></a>
+
+        </li>
+    </ul>
+    <div id="lmsDescription" style="display:none;">
+        <h3>Library Management System</h3>
+        <p>A Library Management System (LMS) using Django is a web application that helps manage and organize library
+            resources such as books, authors, and users (students and library members). The system leverages Django, a
+            powerful and versatile Python framework, to build web applications.</p>
+
+        <h4>Features of the Project:</h4>
+        <p> 1. Book Management:
+            - Add, edit, and delete books.
+            - Display book details such as title, author, category, and publication date.
+            - Search for books by title or author.</p>
+
+        <p>2. Author Management:
+            - Add, edit, and delete author information.
+            - Display a list of authors associated with books.</p>
+
+        <p>3. Member Management:
+            - Register new members.
+            - Track borrowing and returning operations for members.
+            - Display borrowing history for each member.</p>
+
+        <p>4. Borrowing and Returning Management:
+            - Track book borrowing operations by members.
+            - Track return dates and impose fines for late returns.</p>
+
+        <p> 5. User Interface:
+            - Design a simple and user-friendly interface using HTML and CSS.
+            - Use JavaScript and jQuery to enhance interactivity and user experience.
+        </p>
+        <h4>Workflow </h4>
+        <p>1. *Adding a New Book:
+            - The librarian adds a new book by entering details like title, author, and category.
+            - The book data is stored in the database.</p>
+
+        <p></p>2. Registering a New Member:
+        - The librarian registers a new member by entering their personal details.
+        - The member data is stored in the database.
+        <p>3. Borrowing a Book:
+            - A member borrows a specific book.
+            - The database is updated to track the borrowing operation and set a return date.</p>
+
+        <p>4. Returning a Book:
+            - The member returns the borrowed book.
+            - The book's status is updated in the database to mark it as available.</p>
+
+        </p>
+    </div>
+
+
+    </div>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('showLMSBtn').addEventListener('click', function () {
+                var lmsDescription = document.getElementById('lmsDescription');
+                if (lmsDescription.style.display === 'none') {
+                    lmsDescription.style.display = 'block';
+                } else {
+                    lmsDescription.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html> -->
+
+<!-- <html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>الواجهة الأمامية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        text-align: center;
+    }
+
+    .container {
+        width: 50%;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('userForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // الحصول على البيانات المدخلة
+            var username = document.getElementById('username').value;
+            var username = document.getElementById('username').value;
+
+            // توجيه المستخدم إلى صفحة أخرى بناءً على البيانات المدخلة
+            if (username = 'abdo') {
+                window.location.href = 'index';
+            } else {
+                window.location.href = 'minor.html';
+            }
+        });
+    });
+
+</script>
+
+<body>
+    <div class="container">
+        <h1>مرحبًا بك في نظامنا</h1>
+        <form id="userForm">
+            <label for="username">اسم المستخدم:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="age">العمر:</label>
+            <input type="username" id="age" name="age" required>
+            <br>
+            <button type="submit">تسجيل</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuturLearn | Online learning platform | Future skills </title>
+    <link rel="stylesheet" href="{% static 'css/stylms.css' %}">
+</head>
+
+<!-- <script>
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('userForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // الحصول على البيانات المدخلة
+            var username = document.getElementById('username').value;
+            var username = document.getElementById('username').value;
+
+            // توجيه المستخدم إلى صفحة أخرى بناءً على البيانات المدخلة
+            if (username = 'abdo') {
+                window.location.href = 'index';
+            } else {
+                window.location.href = 'minor.html';
+            }
+        });
+    }); -->
+
+</script>
+
+
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none;">
+            <h1 class='logo'>FuturLearn</h1>
+        </a>
+    </header>
+
+    <main>
+        <div class="hero-content">
+            <p class="p1">Learn Without</p>
+            <p class="p1" style="margin-top: -16px">Limits</p>
+            <p class="p2">Take the next step in your career with a world class learning experience.</p>
+            <a href="{% url 'signup' %}">
+                <input class='signup-butt' type="button" value="Sign Up"></a>
+            <a href="{% url 'login' %}">
+                <input class='login-butt' type="button" value="Login"></a>
+        </div>
+        <div class="hero-image">
+            <img src="{% static 'background/hero.png' %}" alt="hero-image">
+        </div>
+    </main>
+
+    <footer>
+        <p><small>Copyright &copy; 2021 Gaurav Sharma</small></p>
+    </footer>
+</body>
+
+</html>
